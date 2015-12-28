@@ -1,5 +1,4 @@
 <?php
-use JoeFallon\PhpTime\MySqlDateTime;
 
 /**
  * @Entity

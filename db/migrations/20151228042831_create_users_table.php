@@ -2,7 +2,7 @@
 
 use Phinx\Migration\AbstractMigration;
 
-class CreateBugsTable extends AbstractMigration
+class CreateUsersTable extends AbstractMigration
 {
     /**
      * Change Method.
@@ -27,12 +27,11 @@ class CreateBugsTable extends AbstractMigration
      */
     public function change()
     {
-        $bugs = $this->table('bugs');
-        $bugs->addColumn('description', 'text',   ['limit' => 20]);
-        $bugs->addColumn('status',      'string', ['limit' => 20]);
-        $bugs->addColumn('created',     'string', ['limit' => 20]);
-        $bugs->addColumn('updated',     'string', ['limit' => 20]);
-        $bugs->addIndex('status', ['unique' => false]);
-        $bugs->save();
+        $users = $this->table('users');
+        $users->addColumn('name',    'string', ['limit' => 255]);
+        $users->addColumn('created', 'string', ['limit' => 20]);
+        $users->addColumn('updated', 'string', ['limit' => 20]);
+        $users->addIndex('name', ['unique' => false]);
+        $users->save();
     }
 }
