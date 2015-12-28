@@ -7,6 +7,6 @@ $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
 // Perform database cleanup.
 $pdo->exec('SET FOREIGN_KEY_CHECKS=0;');
-//$pdo->exec('TRUNCATE TABLE `gtwy_tests`');
+$pdo->exec('TRUNCATE TABLE `products`');
 //$pdo->exec('TRUNCATE TABLE `join_tests`');
 $pdo->exec('SET FOREIGN_KEY_CHECKS=1;');
