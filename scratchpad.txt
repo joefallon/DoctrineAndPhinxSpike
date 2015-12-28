@@ -3,6 +3,7 @@ Script Commands
 php ./vendor/bin/doctrine orm:generate-proxies
 php ./vendor/bin/phinx init
 vendor/bin/phinx migrate -e development
+vendor/bin/phinx create MyNewMigration
 
 
 An Example Model: Bug Tracker
@@ -25,5 +26,13 @@ name        string,     length=255, index
 created     string,     length=20
 updated     string,     length=20
 
+
+Bugs Table
+==========
+id              int,    primary key
+description     text
+status          string, length=20, index
+created         string, length=20
+updated         string, length=20
 
 

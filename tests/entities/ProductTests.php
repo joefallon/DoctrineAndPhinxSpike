@@ -32,4 +32,12 @@ class ProductTests extends UnitTest
         $this->assertEqual(strlen($product->getCreated()), 19, 'created');
         $this->assertEqual(strlen($product->getUpdated()), 19, 'updated');
     }
+
+    public function test_updateTimestamps()
+    {
+        $product = new Product();
+        $product->updateTimestamps();
+        $this->assertEqual(strlen($product->getCreated()), 19, 'created');
+        $this->assertEqual(strlen($product->getUpdated()), 19, 'updated');
+    }
 }

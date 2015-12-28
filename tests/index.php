@@ -10,7 +10,7 @@ require("config/doctrine.php");
  * Entity Tests
  */
 new ProductTests();
-
+new BugTests();
 
 
 UnitTest::getAllUnitTestsSummary();
