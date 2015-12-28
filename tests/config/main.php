@@ -16,4 +16,8 @@ require(VEND_PATH . "/autoload.php");
 // All other (i.e. non-composer) autoloading.
 AutoLoader::registerAutoLoad();
 
-
+define("DB_HOST", "localhost");
+define("DB_PORT", 3306);
+define("DB_NAME", "doctrine_spike");
+define("DB_USER", "doctrine_spike");
+define("DB_PASS", "doctrine_spike");
