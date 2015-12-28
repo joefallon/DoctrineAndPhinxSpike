@@ -1,0 +1,13 @@
+{
+    "name": "joefallon/doctrine-and-phinx-spike",
+    "description": "A spike for using Doctrine 2 with Phinx.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joe Fallon",
+            "email": "joseph.t.fallon@gmail.com"
+        }
+    ],
+    "require": {}
+}
