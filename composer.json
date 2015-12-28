@@ -9,5 +9,13 @@
             "email": "joseph.t.fallon@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "joefallon/phpautoloader": "^2.0.4",
+        "joefallon/phptime": "^4.0.3",
+        "doctrine/orm": "^2.5.3"
+    },
+    "require-dev": {
+        "joefallon/kisstest": "^2.0.1",
+        "robmorgan/phinx": "^0.5.0"
+    }
 }

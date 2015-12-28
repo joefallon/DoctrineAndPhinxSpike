@@ -1,0 +1,5 @@
+Script Commands
+===============
+./vendor/bin/doctrine orm:generate-proxies
+
+
